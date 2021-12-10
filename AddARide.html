@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add a Ride | TrempMate</title>
+    <link rel="stylesheet" href="css/total.css">
+    <!-- icons css -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/project.js"></script>
+</head>
+<body class="addARide">
+<div class="gridContainer">
+
+    <!-- NavBar -->
+    <nav class="topnav">
+        <a href="LandingPage.html"><i class="fa fa-home"></i> Home</a>
+        <a href="UserProfile.html"><i class="fa fa-user"></i> My Profile</a>
+        <a href="SearchARide.html"><i class="fa fa-car"></i> Join a Ride</a>
+        <a href="AddARide.html" class="active"><i class="fa fa-plus"></i> Create a Ride</a>
+        <a href="contactus.html"><i class="fa fa-comment"></i> Contact Us</a>
+        <a href="Welcome.html"><i class="fa fa-sign-out"></i> Log Out</a>
+    </nav>
+
+    <!-- header -->
+    <header class="header"><p class="typingEffect">Add a Ride</p></header>
+
+    <!-- main -->
+    <main class="main">
+        <form action="">
+            <label for="goesFrom"></label>
+            <input name="goesFrom" id="goesFrom" placeholder="From:" class="feedback-input"> <br>
+            <label for="dropAt"></label>
+            <input name="dropAt" id="dropAt" placeholder="Drop at:" class="feedback-input"> <br>
+            <label for="price"></label>
+            <input name="price" id="price" placeholder="Price:" class="feedback-input"> <br>
+            <label for="rideHour"></label>
+            <input name="rideHour" id="rideHour" placeholder="Ride hour:" class="feedback-input"> <br>
+            <label for="passengers"></label>
+            <input name="passengers" id="passengers" placeholder="Passengers amount:" class="feedback-input"> <br>
+            <br>
+            <input id="createRide" type="submit" value="Create a ride"
+                   onclick=notification("createRide","You_add_a_new_ride")>
+        </form>
+        <br>
+
+    </main>
+
+    <footer id="footer" class="footer" dir="rtl">
+        <a class="footerLable" href="#contactUs" onclick="window.location.href='contactUs.html'">Contact Us |</a>
+        <a class="footerLable" href="#aboutUs" onclick="window.location.href='aboutUs.html'">About Us |</a>
+        <a class="footerLable"
+           href="https://www.google.com/search?q=TrempMate&oq=TrempMate&aqs=chrome.0.69i59j0i13l3j0i13i395j69i61l3.10095j1j7&sourceid=chrome&ie=UTF-8">
+            ©️ 2021 created by TrempMate</a>
+    </footer>
+</div>
+</body>
+</html>
